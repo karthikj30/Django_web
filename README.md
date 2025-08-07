@@ -17,7 +17,8 @@ A responsive and animated web application built using **Django**. This project i
 
 ## 🖼️ Screenshots
 
-> *Add screenshots here to showcase UI (e.g., homepage, mobile view, animations)*
+<img width="1882" height="882" alt="image" src="https://github.com/user-attachments/assets/dc9abfa4-90d9-4d08-aa63-2d024722932e" />
+
 
 ---
 
@@ -109,10 +110,6 @@ python manage.py collectstatic
 💡 **Feel free to fork, contribute or star this project if you find it useful!**
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
