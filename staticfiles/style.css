@@ -1,0 +1,80 @@
+/* Reset and basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Parallax container */
+.parallax {
+    background-image: url('https://images.unsplash.com/photo-1493244040629-496f6d136cc3');
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+}
+
+.parallax-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.content {
+    padding: 60px 20px;
+    background: #f8f8f8;
+    text-align: center;
+    transition: all 0.8s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Scroll-triggered animation */
+.content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    padding: 40px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    transition: all 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        padding: 20px;
+    }
+
+    .parallax-text h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 40px 10px;
+    }
+}

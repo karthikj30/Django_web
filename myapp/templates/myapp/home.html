@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Django Site</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🌟 DjangoSite</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero animate-fade-in">
+        <div class="content animate-slide-up">
+            <h1>Hello, Django!</h1>
+            <p>Welcome to your stylish and mobile-friendly Django website.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 My Django App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
